@@ -1,0 +1,29 @@
+html
+  head
+    title Awesome Game
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css")
+    link(rel="stylesheet", href="/css/login.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js")
+  body
+    .row#content
+      .col.s3
+      .col.s6
+        .row
+          .card
+            .c
+            .card-content
+              span.card-title Login page
+              .row
+                .input-field.col.s6
+                  input#login(type="text")
+                  label(for="login") Login
+                .input-field.col.s6
+                  input#password(type="password")
+                  label(for="password") Password
+                button.btn.waves-effect.waves-light Connect
+                  i.material-icons.right send
+
+      .col.s6
+    script(src="/socket.io/socket.io.js")
+    script(src="/javascript/login.js")

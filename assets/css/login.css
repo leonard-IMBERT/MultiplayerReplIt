@@ -1,0 +1,8 @@
+body {
+  display: flex;
+}
+
+div#content {
+  align-self: center;
+  width: 100%;
+}
